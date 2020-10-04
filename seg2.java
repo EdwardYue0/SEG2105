@@ -1,7 +1,9 @@
+package seg;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 public class Arrays {
-	private final int num =190000000;
+	private final int num =100000000;
 	private char[] chars = new char[] {'a','b','c','d','e','f','g','h','i','j','k','l','m','n'
 										,'o','p','q','r','s','t','u','v','w','x','y','z'};
 	public ArrayList arrayListAdd(ArrayList list) {
@@ -16,7 +18,7 @@ public class Arrays {
 		}
 		return list;
 	}
-	public LinkedList arrayListAdd(LinkedList list) {
+	public LinkedList LinkedListAdd(LinkedList list) {
 		int temp = 0;
 		int count=0;
 		while(temp<num) {
@@ -62,7 +64,7 @@ public class Arrays {
 		LinkedList list2 = new LinkedList();
 		System.out.println("Test LinkedList starts");
 		start = System.nanoTime();
-		list2 = neww.arrayListAdd(list2);
+		list2 = neww.LinkedListAdd(list2);
 		end = System.nanoTime();
 		System.out.println("Test LinkedList ends, total time "+nanoToSeconds(end-start));
 		
@@ -79,37 +81,42 @@ public class Arrays {
 		System.out.println();
 		System.out.println();
 		
-		
+		/*
 		//ArrayList
 		String texts ="";
 		System.out.println("Summing up ArrayList");
 		start = System.nanoTime();
-		for(int a=0;a<list.size();a++) {
-			System.out.println(texts);
-			texts = texts+list.get(a);
+		int temp = 0;
+		while(temp<list.size()) {
+			texts = texts+list.get(temp);
+			temp++;
 		}
 		end = System.nanoTime();
-		System.out.println("It took "+(end-start)+" seconds to sum up "+list.size()+" elements");
+		System.out.println("It took "+(end-start)+" nanoseconds to sum up "+list.size()+" elements");
 		
 		//LinkedList 
 		texts ="";
 		start = System.nanoTime();
 		System.out.println("Summing up LinkedList");
-		for(int a=0;a<list2.size();a++) {
-			texts = texts+list2.get(a);
+		temp=0;
+		while(temp<list2.size()) {
+			texts = texts+list2.get(temp);
+			temp++;
 		}
 		end = System.nanoTime();
-		System.out.println("It took "+(end-start)+" seconds to sum up "+list2.size()+" elements");
+		System.out.println("It took "+(end-start)+" nanoseconds to sum up "+list2.size()+" elements");
 		
 		//Array
 		texts ="";
 		System.out.println("Summing up Array");
 		start = System.nanoTime();
-		for(int a=0;a<array.length;a++) {
-			texts = texts+array[a];
+		temp=0;
+		while(temp<array.length) {
+			texts = texts+array[temp];
+			temp++;
 		}
 		end = System.nanoTime();
-		System.out.println("It took "+(end-start)+" seconds to sum up "+array.length+" elements");
-		
+		System.out.println("It took "+(end-start)+" nanoseconds to sum up "+array.length+" elements");
+		*/
 	}
 }
