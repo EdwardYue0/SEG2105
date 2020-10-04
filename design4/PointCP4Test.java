@@ -18,10 +18,10 @@ public class PointCP4Test
   //Class methods *****************************************************
 
   /**
-   * This method is responsible for the creation of the PointCP
+   * This method is responsible for the creation of the PointCP4
    * object.  This can be done in two ways; the first, by using the
    * command line and running the program using <code> java 
-   * PointCPTest &lt;coordtype (c/p)&gt; &lt;X/RHO&gt; &lt;Y/THETA&gt;
+   * PointCP4Test &lt;coordtype (c/p)&gt; &lt;X/RHO&gt; &lt;Y/THETA&gt;
    * </code> and the second by getting the program to prompt the user.
    * If the user does not enter a valid sequence at the command line,
    * the program will prompte him or her.
@@ -38,7 +38,7 @@ public class PointCP4Test
     System.out.println("Cartesian-Polar Coordinates Conversion Program");
 
     // Check if the user input coordinates from the command line
-    // If he did, create the PointCP object from these arguments.
+    // If he did, create the PointCP4 object from these arguments.
     // If he did not, prompt the user for them.
     try
     {
@@ -72,10 +72,10 @@ public class PointCP4Test
 
   /**
    * This method obtains input from the user and verifies that
-   * it is valid.  When the input is valid, it returns a PointCP
+   * it is valid.  When the input is valid, it returns a PointCP4
    * object.
    *
-   * @return A PointCP constructed using information obtained 
+   * @return A PointCP4 constructed using information obtained 
    *         from the user.
    * @throws IOException If there is an error getting input from
    *         the user.
@@ -157,7 +157,7 @@ public class PointCP4Test
       //Reset flag so while loop will prompt for other arguments
       isOK = false;
     }
-    //Return a new PointCP object
+    //Return a new PointCP4 object
     return (new PointCP4(coordType, a, b));
   }
 }
