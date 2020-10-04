@@ -31,7 +31,11 @@ public class runTime {
         long startTime = System.nanoTime();
         long endTime = startTime + testTimeNano;
         while(System.nanoTime() < endTime){
-            new PointCP5(type, 10*Math.random(), 10*Math.random());
+            if(type=='C'){
+                new PointCP2(type, 10*Math.random(), 10*Math.random());
+            }
+            if(type=='P'){
+                new PointCP3(type, 10*Math.random(), 10*Math.random());}
             count++;
         }
         long result = testTimeNano/count;
@@ -72,7 +76,13 @@ public class runTime {
         long count = 0;
         long startTime = System.nanoTime();
         long endTime = startTime + testTimeNano;
-        PointCP5 tmp = new PointCP5(type, 10 * Math.random(), 10 * Math.random());
+        PointCP5 tmp;
+        if(type=='C'){
+            tmp=new PointCP2(type, 10 * Math.random(), 10 * Math.random());
+        }
+        else{
+            tmp=new PointCP3(type, 10 * Math.random(), 10 * Math.random());
+        }
         while (System.nanoTime() < endTime) {
             tmp.getX();
             count++;
@@ -117,7 +127,13 @@ public class runTime {
         long count = 0;
         long startTime = System.nanoTime();
         long endTime = startTime + testTimeNano;
-        PointCP5 tmp = new PointCP5(type, 10 * Math.random(), 10 * Math.random());
+        PointCP5 tmp;
+        if(type=='C'){
+            tmp=new PointCP2(type, 10 * Math.random(), 10 * Math.random());
+        }
+        else{
+            tmp=new PointCP3(type, 10 * Math.random(), 10 * Math.random());
+        }
         while (System.nanoTime() < endTime) {
             tmp.getRho();
             count++;
