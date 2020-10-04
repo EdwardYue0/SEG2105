@@ -157,14 +157,14 @@ public class runTime {
         System.out.println("Average time for initializing P PointCP: "+initPointCP('P', testTime)+"ns");
         System.out.println("Average time for initializing P PointCP5: "+initPointCP5('P', testTime)+"ns");
 
-        System.out.println("Average time for getting Cartesian from Cartesian PointCP: "+getCPointCP('C', testTime)+"ns");
-        System.out.println("Average time for getting Cartesian from Cartesian PointCP5: "+getCPointCP5('C', testTime)+"ns");
-        System.out.println("Average time for getting Polar from Cartesian PointCP: "+getPPointCP('C', testTime)+"ns");
-        System.out.println("Average time for getting Polar from Cartesian PointCP5: "+getPPointCP5('C', testTime)+"ns");
+        System.out.println("Average time for getting Cartesian when stroing Cartesian PointCP: "+getCPointCP('C', testTime)+"ns");
+        System.out.println("Average time for getting Cartesian when stroing Cartesian PointCP5: "+getCPointCP5('C', testTime)+"ns");
+        System.out.println("Average time for getting Polar when stroing Cartesian PointCP: "+getPPointCP('C', testTime)+"ns");
+        System.out.println("Average time for getting Polar when stroing Cartesian PointCP5: "+getPPointCP5('C', testTime)+"ns");
 
-        System.out.println("Average time for getting Cartesian from Polar PointCP: "+getCPointCP('P', testTime)+"ns");
-        System.out.println("Average time for getting Cartesian from Polar PointCP5: "+getCPointCP5('P', testTime)+"ns");
-        System.out.println("Average time for getting Polar from Polar PointCP: "+getPPointCP('P', testTime)+"ns");
-        System.out.println("Average time for getting Polar from Polar PointCP5: "+getPPointCP5('P', testTime)+"ns");
+        System.out.println("Average time for getting Cartesian when stroing Polar PointCP: "+getCPointCP('P', testTime)+"ns");
+        System.out.println("Average time for getting Cartesian when stroing Polar PointCP5: "+getCPointCP5('P', testTime)+"ns");
+        System.out.println("Average time for getting Polar when stroing Polar PointCP: "+getPPointCP('P', testTime)+"ns");
+        System.out.println("Average time for getting Polar when stroing Polar PointCP5: "+getPPointCP5('P', testTime)+"ns");
     }
 }
