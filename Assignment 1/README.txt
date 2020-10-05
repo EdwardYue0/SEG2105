@@ -15,6 +15,6 @@ PointCP5.java
 PointCP5Test.java
 runTime.java
 Assignment1Ex2.java
-assignment1_Ex2.docx
+Assignment1EX2.docx
 Assignment 1 Ex1.docx
 README.txt
