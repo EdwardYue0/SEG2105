@@ -2,6 +2,7 @@ Student Name and Student ID:
 Yingqi Feng 300077437
 Muyuan Gao 300124236
 Yan Chen 300079899
+Edward Yue 300037744
 
 This file contain 15 files:
 PointCP.java
